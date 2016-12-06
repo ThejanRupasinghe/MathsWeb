@@ -35,12 +35,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script>
         new WOW().init();
     </script>
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             var defaults = {
+             containerID: 'toTop', // fading element id
+             containerHoverID: 'toTopHover', // fading element hover id
+             scrollSpeed: 1200,
+             easingType: 'linear'
+             };
+             */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+
+@yield('style')
+
+@yield('scripts')
     <!-- //animation-effect -->
 
 <!-- banner -->
-   @include('web1.navbar')
-
-     @yield('header')
+   @include('templates.partials.navbar')
 </head>
 
 
@@ -48,27 +71,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     @yield('content')
 
-@include('web1.footer')
+
+</body>
+@include('templates.partials.footer')
 <!-- //footer -->
 <!-- for bootstrap working -->
-<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        /*
-         var defaults = {
-         containerID: 'toTop', // fading element id
-         containerHoverID: 'toTopHover', // fading element hover id
-         scrollSpeed: 1200,
-         easingType: 'linear'
-         };
-         */
 
-        $().UItoTop({ easingType: 'easeOutQuart' });
-
-    });
-</script>
 <!-- //here ends scrolling icon -->
-</body>
+
 </html>

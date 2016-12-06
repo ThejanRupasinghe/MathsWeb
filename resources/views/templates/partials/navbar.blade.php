@@ -9,7 +9,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a class="navbar-brand" href="index.blade.php"><span>T</span>eaching</a></h1>
+                    <h1><a class="navbar-brand" href="../../home/index.blade.php"><span>T</span>eaching</a></h1>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -23,11 +23,11 @@
                             </ul>
                         </div>
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.blade.php">Home</a></li>
-                            <li><a href="services.html" class="hvr-bounce-to-bottom">Services</a></li>
-                            <li><a href="portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-                            <li><a href="short-codes.html" class="hvr-bounce-to-bottom">Short Codes</a></li>
-                            <li><a href="mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
+                            <li class="active"><a href="../../home/index.blade.php">Home</a></li>
+                            <li><a href="../../services/services.html" class="hvr-bounce-to-bottom">Services</a></li>
+                            <li><a href="../../portfolio/portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
+                            <li><a href="../../short-codes/short-codes.html" class="hvr-bounce-to-bottom">Short Codes</a></li>
+                            <li><a href="../../mail/mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
                         </ul>
                         <div class="clearfix"> </div>
                     </nav>

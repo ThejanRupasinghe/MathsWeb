@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="container">
         <div class="col-md-4 w3l_footer_grid">
-            <h2><a href="index.blade.php"><span>T</span>eaching</a></h2>
+            <h2><a href="../../home/index.blade.php"><span>T</span>eaching</a></h2>
             <p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse
                 lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a,
                 ullamcorper magna.</p>
@@ -17,10 +17,10 @@
         <div class="col-md-2 w3l_footer_grid">
             <h3>Navigation</h3>
             <ul class="agileinfo_footer_grid_nav">
-                <li><a href="services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
-                <li><a href="portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
-                <li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
-                <li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
+                <li><a href="../../services/services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
+                <li><a href="../../portfolio/portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
+                <li><a href="../../short-codes/short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
+                <li><a href="../../mail/mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
             </ul>
         </div>
         <div class="col-md-3 w3l_footer_grid">
