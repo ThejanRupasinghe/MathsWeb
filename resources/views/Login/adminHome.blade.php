@@ -57,43 +57,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 <!-- banner -->
-    <div class="header">
+<div class="header">
 
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h1><a class="navbar-brand" href="index.html"><span>T</span>eaching</a></h1>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu menu--shylock">
-                        <div class="agileinfo_social_icons">
-                            <ul class="agileinfo_social_icons1">
-                                <li><a href="#" class="facebook"></a></li>
-                                <li><a href="#" class="twitter"></a></li>
-                                <li><a href="#" class="google"></a></li>
-                                <li><a href="#" class="pinterest"></a></li>
-                            </ul>
-                        </div>
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="/index">Home</a></li>
-                            <li><a href="/services" class="hvr-bounce-to-bottom">Services</a></li>
-                            <li><a href="/portfolio" class="hvr-bounce-to-bottom">Portfolio</a></li>
-                            <li><a href="/downloads" class="hvr-bounce-to-bottom">Downloads</a></li>
-                            <li><a href="/mail" class="hvr-bounce-to-bottom">Mail Us</a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </nav>
-                </div>
-            </nav>
-            @include('templates.partials.carousel')
+ @include('Login.adminNavbar')
+    @include('templates.partials.carousel')
 
-    </div>
+</div>
 
 
 
@@ -271,10 +240,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-2 w3l_footer_grid">
             <h3>Navigation</h3>
             <ul class="agileinfo_footer_grid_nav">
-                <li><a href="services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
-                <li><a href="portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
-                <li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
-                <li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
+                <li><a href="/select/paper"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Upload Paper</a></li>
+                <li><a href="/select/photo"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Upload Photo</a></li>
+                <li><a href="/select/video"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Upload Video</a></li>
+                <li><a href="/select/notice"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Post Notice</a></li>
             </ul>
         </div>
         <div class="col-md-3 w3l_footer_grid">

@@ -65,10 +65,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<ul class="nav navbar-nav">
 								<li><a href="../home/index.blade.php" class="hvr-bounce-to-bottom">Home</a></li>
-								<li><a href="../services/services.html" class="hvr-bounce-to-bottom">Services</a></li>
-								<li><a href="../portfolio/portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-								<li class="active"><a href="short-codes.html">Short Codes</a></li>
-								<li><a href="../mail/mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
+								<li><a href="../Services/services.blade.php" class="hvr-bounce-to-bottom">Services</a></li>
+								<li><a href="../Portfolio/portfolio.blade.php" class="hvr-bounce-to-bottom">Portfolio</a></li>
+								<li class="active"><a href="short-codes.blade.php">Short Codes</a></li>
+								<li><a href="../Mail/Mail.blade.php" class="hvr-bounce-to-bottom">Mail Us</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -658,10 +658,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-2 w3l_footer_grid">
 				<h3>Navigation</h3>
 				<ul class="agileinfo_footer_grid_nav">
-					<li><a href="../services/services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
-					<li><a href="../portfolio/portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
-					<li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
-					<li><a href="../mail/mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
+					<li><a href="../Services/services.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
+					<li><a href="../Portfolio/portfolio.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
+					<li><a href="short-codes.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
+					<li><a href="../Mail/Mail.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3l_footer_grid">

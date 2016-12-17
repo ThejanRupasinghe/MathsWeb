@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Mail Us :: w3layouts</title>
+<title>Teaching an Education School Category Flat Bootstrap Responsive Website Template | Services :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -65,10 +65,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<ul class="nav navbar-nav">
 								<li><a href="../home/index.blade.php" class="hvr-bounce-to-bottom">Home</a></li>
-								<li><a href="../services/services.html" class="hvr-bounce-to-bottom">Services</a></li>
-								<li><a href="../portfolio/portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-								<li><a href="../short-codes/short-codes.html" class="hvr-bounce-to-bottom">Short Codes</a></li>
-								<li class="active"><a href="mail.html">Mail Us</a></li>
+								<li class="active"><a href="services.blade.php">Services</a></li>
+								<li><a href="../Portfolio/portfolio.blade.php" class="hvr-bounce-to-bottom">Portfolio</a></li>
+								<li><a href="../short-codes/short-codes.blade.php" class="hvr-bounce-to-bottom">Short Codes</a></li>
+								<li><a href="../Mail/Mail.blade.php" class="hvr-bounce-to-bottom">Mail Us</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -77,75 +77,81 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //banner -->
-<!-- mail -->
-	<div class="mail">
+<!-- Services -->
+	<div class="services">
 		<div class="container">
-			<h3 class="head head2">C<span>any doubt <i>Contact Us</i></span></h3>
-			<div class="agileits_mail_grids">
-				<div class="col-md-5 agileits_mail_grid_left">
-					<div class="agileits_mail_grid_lft_grid">
-						<h4>Integer venenatis massa lobortis porta</h4>
-						<ul>
-							<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>Nulla nec facilisis turpis ac</li>
-							<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>Eget ornare ex nisl nec lacus</li>
-							<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>Ut tortor augue, placerat massa</li>
-							<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>Quisque consectetur sagittis</li>
-							<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>Curabitur mollis dignissim erat</li>
-						</ul>
-					</div>
-					<div class="agileits_mail_grid_lft_grid1">
-						<h4><span>Twitter</span> Posts</h4>
-						<ul>
-							<li><a href="mailto:info@example.com">@Mark Lii</a> consequat dui id turpis
-								<a href="#">http://kjkjdu.com</a>auctor tellus eu nisi vehicula consequat.</li>
-							<li><a href="mailto:info@example.com">@Henry Paul</a> sit amet elementum dolor
-								<a href="#">http://ujkjyew.com</a>porttitor suscipit orci semper, bibendum.</li>
-							<li><a href="mailto:info@example.com">@John Carl</a> augue diam consequat mi
-								<a href="#">http://tellus.com</a>facilisis vitae, euismod vitae orci consequat.</li>
-						</ul>
+			<h3 class="head head_services">S<span>we are giving special <i>Services</i></span></h3>
+			<div class="agileinfo_services_grids">
+				<div class="col-md-4 agileinfo_services_grid">
+					<div class="agileinfo_services_grid1">
+						<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+						<h4>Ut tortor augue massa</h4>
+						<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, 
+							sed suscipit turpis diam eget nisl.</p>
 					</div>
 				</div>
-				<div class="col-md-7 agileits_mail_grid_right">
-					<div class="agileits_mail_grid_right1">
-						<form action="#" method="post">
-							<span>
-								<i>Name</i>
-								<input type="text" name="Name" placeholder=" " required="">
-							</span>
-							<span>
-								<i>Email</i>
-								<input type="email" name="Email" placeholder=" " required="">
-							</span>
-							<span>
-								<i>Subject</i>
-								<input type="text" name="Subject" placeholder=" " required="">
-							</span>
-							<span>
-								<i>Message</i>
-								<textarea name="Message" placeholder=" " required=""></textarea>
-							</span>
-							<input type="submit" value="Submit Now">
-						</form>
+				<div class="col-md-4 agileinfo_services_grid">
+					<div class="agileinfo_services_grid1">
+						<span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+						<h4>suscipit turpis diam eget</h4>
+						<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, 
+							sed suscipit turpis diam eget nisl.</p>
 					</div>
 				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="agileits_mail_grids1">
-				<h4>Our Branches</h4>
-				<div class="col-md-4 agileits_mail_grids1_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24198.114028131447!2d-73.71929096044927!3d40.701189400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c263af79029215%3A0x2f3dd94700e16099!2sElmont+Union+Free+School!5e0!3m2!1sen!2sin!4v1469878776668"></iframe>
+				<div class="col-md-4 agileinfo_services_grid">
+					<div class="agileinfo_services_grid1">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+						<h4>augue diam consequat</h4>
+						<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, 
+							sed suscipit turpis diam eget nisl.</p>
+					</div>
 				</div>
-				<div class="col-md-4 agileits_mail_grids1_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3224205.7175991116!2d-119.40173469419155!3d37.89213840751937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sschool+in+Nevada%2C+United+States!5e0!3m2!1sen!2sin!4v1469878984811"></iframe>
+				<div class="col-md-4 agileinfo_services_grid">
+					<div class="agileinfo_services_grid1">
+						<span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
+						<h4>Fusce ligula vel sapien</h4>
+						<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, 
+							sed suscipit turpis diam eget nisl.</p>
+					</div>
 				</div>
-				<div class="col-md-4 agileits_mail_grids1_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3225689.8916453766!2d-119.4018645668692!3d37.85823635085354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sschool+in+California%2C+United+States!5e0!3m2!1sen!2sin!4v1469879031059"></iframe>
+				<div class="col-md-4 agileinfo_services_grid">
+					<div class="agileinfo_services_grid1">
+						<span class="glyphicon glyphicon-bed" aria-hidden="true"></span>
+						<h4>Nullam turpis fringilla</h4>
+						<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, 
+							sed suscipit turpis diam eget nisl.</p>
+					</div>
+				</div>
+				<div class="col-md-4 agileinfo_services_grid">
+					<div class="agileinfo_services_grid1">
+						<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+						<h4>Integer venenatis lobortis</h4>
+						<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, 
+							sed suscipit turpis diam eget nisl.</p>
+					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-<!-- //mail -->
+<!-- //Services -->
+<!-- Services-bottom -->
+	<div class="services-bottom">
+		<div class="container">
+			<div class="col-md-6 w3agile_services_bottom_grid">
+			</div>
+			<div class="col-md-6 w3agile_services_bottom_grid">
+				<h3>Integer venenatis massa lobortis porta ultricies nulla nec facilisis turpis</h3>
+				<p>Etiam sit amet porta lectus, in convallis sapien. Nam quis erat lorem. 
+					Nullam bibendum nisi eu fringilla vulputate. Fusce non ligula vel sapien 
+					blandit cursus.</p>
+				<div class="more">
+					<a href="../Mail/Mail.blade.php" class="hvr-bounce-to-bottom">Mail Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //Services-bottom -->
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
@@ -183,10 +189,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-2 w3l_footer_grid">
 				<h3>Navigation</h3>
 				<ul class="agileinfo_footer_grid_nav">
-					<li><a href="../services/services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
-					<li><a href="../portfolio/portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
-					<li><a href="../short-codes/short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
-					<li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
+					<li><a href="services.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
+					<li><a href="../Portfolio/portfolio.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
+					<li><a href="../short-codes/short-codes.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
+					<li><a href="../Mail/Mail.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3l_footer_grid">

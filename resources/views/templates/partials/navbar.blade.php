@@ -24,10 +24,10 @@
                         </div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="../../home/index.blade.php">Home</a></li>
-                            <li><a href="../../services/services.html" class="hvr-bounce-to-bottom">Services</a></li>
-                            <li><a href="../../portfolio/portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-                            <li><a href="../../short-codes/short-codes.html" class="hvr-bounce-to-bottom">Short Codes</a></li>
-                            <li><a href="../../mail/mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
+                            <li><a href="../../Services/services.blade.php" class="hvr-bounce-to-bottom">Services</a></li>
+                            <li><a href="../../Portfolio/portfolio.blade.php" class="hvr-bounce-to-bottom">Portfolio</a></li>
+                            <li><a href="../../short-codes/short-codes.blade.php" class="hvr-bounce-to-bottom">Short Codes</a></li>
+                            <li><a href="../../Mail/Mail.blade.php" class="hvr-bounce-to-bottom">Mail Us</a></li>
                         </ul>
                         <div class="clearfix"> </div>
                     </nav>

@@ -10,7 +10,60 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/carousel', function () {
+    return view('practiceWeb');
+
+});
+
+
+
+
+
+Route::get('/test/download', function () {
+    return view('test');});
+
+Route::get('/login', function () {
+    return view('Login.login');});
+
+
+Route::patch('/login/user', [
+    'uses' => 'LoginControler@loginUser'
+]);
+
+
+
+
+
+Route::get('/select/photo', 'UploadController@showPhotoUpload');
+Route::get('/select/video', 'UploadController@showVideoUpload');
+Route::get('/select/paper', 'UploadController@showPaperUpload');
+
+
+Route::patch('/upload/photo', 'UploadController@uploadPhoto');
+Route::patch('/upload/video', 'UploadController@uploadVideo');
+Route::patch('/upload/paper', 'UploadController@uploadPaper');
+
+
+
+Route::get('/download/{file}','DownloadController@getDownload');
+
+
 
 Route::get('/index', function () {
-    return view('web1.index');
+    return view('templates.master');
 });
+
+Route::get('/downloads','ResourceController@showDownloads');
+
+
+Route::get('/portfolio', function () {
+    return view('Portfolio.portfolio');
+});
+Route::get('/services', function () {
+    return view('Services.services');
+});
+
+Route::get('/mail', function () {
+    return view('Mail.mail');
+});
+

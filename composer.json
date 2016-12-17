@@ -13,8 +13,12 @@
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.0",
         "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*"
+        "symfony/dom-crawler": "3.1.*",
+        "laravel/framework": "5.0.*",
+        "laravelcollective/html": "~5.0",
+        "illuminate/html": "5.*"
     },
+
     "autoload": {
         "classmap": [
             "database"
