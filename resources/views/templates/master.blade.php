@@ -16,22 +16,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
-    <link rel="stylesheet" href="{{ URL::asset('css/simple-sidebar.css') }}"/>
-    <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+        body{
+            padding-top: 40px;
+        }
+    </style>
 
 
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- //for-mobile-apps -->
     <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!-- js -->
-
+    <script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet">
     <!-- start-smoth-scrolling -->
     <script type="text/javascript" src="{{ URL::asset('js/move-top.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/easing.js') }}"></script>
@@ -43,60 +52,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
     <!-- start-smoth-scrolling -->
     <!-- animation-effect -->
-
+    <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet">
     <script src="{{ URL::asset('js/wow.min.js') }}"></script>
     <script>
         new WOW().init();
     </script>
-    <!-- //animation-effect -->
 </head>
 
 <body>
 <!-- banner -->
+<div class="banner">
     <div class="header">
 
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h1><a class="navbar-brand" href="index.html"><span>T</span>eaching</a></h1>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu menu--shylock">
-                        <div class="agileinfo_social_icons">
-                            <ul class="agileinfo_social_icons1">
-                                <li><a href="#" class="facebook"></a></li>
-                                <li><a href="#" class="twitter"></a></li>
-                                <li><a href="#" class="google"></a></li>
-                                <li><a href="#" class="pinterest"></a></li>
-                            </ul>
-                        </div>
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="/index">Home</a></li>
-                            <li><a href="/services" class="hvr-bounce-to-bottom">Services</a></li>
-                            <li><a href="/portfolio" class="hvr-bounce-to-bottom">Portfolio</a></li>
-                            <li><a href="/downloads" class="hvr-bounce-to-bottom">Downloads</a></li>
-                            <li><a href="/mail" class="hvr-bounce-to-bottom">Mail Us</a></li>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1><a class="navbar-brand" href="index.html"><span>T</span>eaching</a></h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <nav class="menu menu--shylock">
+                    <div class="agileinfo_social_icons">
+                        <ul class="agileinfo_social_icons1">
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="twitter"></a></li>
+                            <li><a href="#" class="google"></a></li>
+                            <li><a href="#" class="pinterest"></a></li>
                         </ul>
-                        <div class="clearfix"> </div>
-                    </nav>
-                </div>
-            </nav>
-            @include('templates.partials.carousel')
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/inde" class="hvr-bounce-to-bottom">Home</a></li>
+                        <li><a href="/services" class="hvr-bounce-to-bottom">Services</a></li>
+                        <li><a href="/portfolio" class="hvr-bounce-to-bottom">Portfolio</a></li>
+                        <li><a href="/downloads" class="hvr-bounce-to-bottom">Downloads</a></li>
+                        <li><a href="/mail" class="hvr-bounce-to-bottom">Mail Us</a></li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </nav>
+            </div>
+        </nav>
+        @include('templates.partials.carousel')
 
     </div>
+    <div class="w3agile_banner_info">
+        <div class="container">
+            <h3>teaching</h3>
+            <a href="http://w3layouts.com">powered by w3layouts.com</a>
+        </div>
+    </div>
+    <div class="w3_scroll">
+        <div class="scroll-down">
+            <span class="dot"> </span>
+        </div>
+    </div>
 
-
-
+</div>
 <!-- //banner -->
 <!-- banner-bottom -->
 <div id="about" class="banner-bottom">
@@ -294,7 +311,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //footer -->
 <!-- for bootstrap working -->
-<script src="{{ URL::asset('js/bootstrap.js') }}"></script>
+<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 <script type="text/javascript">

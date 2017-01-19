@@ -35,6 +35,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- start-smoth-scrolling -->
+
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- //for-mobile-apps -->
+	<link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
+	<!-- //js -->
+	<link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="{{ URL::asset('js/move-top.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('js/easing.js') }}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- animation-effect -->
+	<link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet">
+	<script src="{{ URL::asset('js/wow.min.js') }}"></script>
+
 </head>
 	
 <body>
@@ -64,11 +93,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 							<ul class="nav navbar-nav">
-								<li><a href="../home/index.blade.php" class="hvr-bounce-to-bottom">Home</a></li>
-								<li><a href="../Services/services.blade.php" class="hvr-bounce-to-bottom">Services</a></li>
-								<li><a href="../Portfolio/portfolio.blade.php" class="hvr-bounce-to-bottom">Portfolio</a></li>
-								<li><a href="../short-codes/short-codes.blade.php" class="hvr-bounce-to-bottom">Short Codes</a></li>
-								<li class="active"><a href="Mail.blade.php">Mail Us</a></li>
+								<li><a href="/index" class="hvr-bounce-to-bottom">Home</a></li>
+								<li><a href="/services" class="hvr-bounce-to-bottom">Services</a></li>
+
+								<li><a href="/portfolio">Portfolio</a></li>
+
+
+
+								<li><a href="/downloads" class="hvr-bounce-to-bottom">Downloads</a></li>
+
+
+
+								<li class="active"><a href="Mail">Mail Us</a></li>
 							</ul>
 						</nav>
 					</div>

@@ -52,7 +52,6 @@
             });
         });
     </script>
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
     <!-- start-smoth-scrolling -->
     <!-- animation-effect -->
@@ -63,47 +62,101 @@
     </script>
     <![endif]-->
 
+
+
+
+
+
+
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- //for-mobile-apps -->
+    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <!-- js -->
+    <script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
+    <!-- //js -->
+    <link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="{{ URL::asset('js/move-top.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/easing.js') }}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <!-- animation-effect -->
+    <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet">
+    <script src="{{ URL::asset('js/wow.min.js') }}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body>
 
 <!-- Navigation -->
-<div class="header">
+<div class="banner1">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a class="navbar-brand" href="../home/index.blade.php"><span>T</span>eaching</a></h1>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <nav class="menu menu--shylock">
+                        <div class="agileinfo_social_icons">
+                            <ul class="agileinfo_social_icons1">
+                                <li><a href="#" class="facebook"></a></li>
+                                <li><a href="#" class="twitter"></a></li>
+                                <li><a href="#" class="google"></a></li>
+                                <li><a href="#" class="pinterest"></a></li>
+                            </ul>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="/index" class="hvr-bounce-to-bottom">Home</a></li>
+                            <li><a href="/services" class="hvr-bounce-to-bottom">Services</a></li>
+                            <li><a href="/portfolio" class="hvr-bounce-to-bottom" >Portfolio</a></li>
+                            <li class="active" ><a href="Downloads">Downloads</a></li>
+                            <li><a href="/mail" class="hvr-bounce-to-bottom">Mail Us</a></li>
 
-<nav class="navbar navbar-default">
-    <div class="navbar-header navbar-left">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <h1><a class="navbar-brand" href="index.html"><span>T</span>eaching</a></h1>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-        <nav class="menu menu--shylock">
-            <div class="agileinfo_social_icons">
-                <ul class="agileinfo_social_icons1">
-                    <li><a href="#" class="facebook"></a></li>
-                    <li><a href="#" class="twitter"></a></li>
-                    <li><a href="#" class="google"></a></li>
-                    <li><a href="#" class="pinterest"></a></li>
-                </ul>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/index">Home</a></li>
-                <li><a href="services.html" class="hvr-bounce-to-bottom">Services</a></li>
-                <li><a href="portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-                <li><a href="/downloads" class="hvr-bounce-to-bottom">Downloads</a></li>
-                <li><a href="mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
-            </ul>
-            <div class="clearfix"> </div>
-        </nav>
-    </div>
-</nav>
-    </div>
-
+</div>
 <!-- Page Content -->
 <div class="container">
 
@@ -122,12 +175,7 @@
             </div>
         @endforeach
 
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="/download/5.pdf">
-                <img class="img-responsive" src="http://placehold.it/400x300?text=PAPER 1" alt="">
-            </a>
 
-        </div>
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
             <a class="thumbnail" href="{{ URL::asset('files/pdf/5.pdf') }}">
                 <img class="img-responsive" src="http://placehold.it/400x300?text=rocks" alt="">
