@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header">
 
  @include('Login.adminNavbar')
-    @include('templates.partials.carousel')
+    @include('home.partials.carousel')
 
 </div>
 

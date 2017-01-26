@@ -81,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</nav>
 					</div>
 				</nav>
-				@include('templates.partials.carousel')
+				@include('home.partials.carousel')
 
 			</div>
 		</div>

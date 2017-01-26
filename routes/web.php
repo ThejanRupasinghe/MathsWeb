@@ -10,6 +10,23 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//PAGES
+Route::get('/', function () {
+    return view('home.index');
+});
+Route::get('/portfolio', function () {
+    return view('Portfolio.portfolio');
+});
+Route::get('/services', function () {
+    return view('Services.services');
+});
+
+Route::get('/mail', function () {
+    return view('Mail.mail');
+});
+
+
 Route::get('/carousel', function () {
     return view('practiceWeb');
 
@@ -41,22 +58,8 @@ Route::patch('/upload/paper', 'UploadController@uploadPaper');
 Route::get('/download/{file}','DownloadController@getDownload');
 
 
-
-Route::get('/index', function () {
-    return view('templates.master');
-});
-
 Route::get('/downloads','ResourceController@showDownloads');
 
 
-Route::get('/portfolio', function () {
-    return view('Portfolio.portfolio');
-});
-Route::get('/services', function () {
-    return view('Services.services');
-});
 
-Route::get('/mail', function () {
-    return view('Mail.mail');
-});
 
