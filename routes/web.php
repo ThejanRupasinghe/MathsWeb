@@ -15,10 +15,6 @@ Route::get('/carousel', function () {
 
 });
 
-
-
-
-
 Route::get('/test/download', function () {
     return view('test');});
 
@@ -32,8 +28,6 @@ Route::patch('/login/user', [
 
 
 
-
-
 Route::get('/select/photo', 'UploadController@showPhotoUpload');
 Route::get('/select/video', 'UploadController@showVideoUpload');
 Route::get('/select/paper', 'UploadController@showPaperUpload');
@@ -42,7 +36,6 @@ Route::get('/select/paper', 'UploadController@showPaperUpload');
 Route::patch('/upload/photo', 'UploadController@uploadPhoto');
 Route::patch('/upload/video', 'UploadController@uploadVideo');
 Route::patch('/upload/paper', 'UploadController@uploadPaper');
-
 
 
 Route::get('/download/{file}','DownloadController@getDownload');
