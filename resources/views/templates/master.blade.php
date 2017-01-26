@@ -27,9 +27,11 @@
         <!--Local Links-->
         <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all"/>
         <script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
+        <script src="{{ URL::asset('js/bootstrap.js') }}" type="text/javascript"></script>
 
         <!--Custom CSS-->
         <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
+        @yield('styling')
 
         <!--Custom JS-->
         <!--Add if you have-->
@@ -64,7 +66,7 @@
 
     <body>
 
-        @yield('nav-bar')
+        @yield('body')
 
         <!-- banner-bottom -->
         <div id="about" class="banner-bottom">
@@ -123,92 +125,7 @@
         <!-- //banner-bottom1 -->
 
         <!-- testimonials -->
-        <div class="testimonials">
-            <div class="container">
-                <h3 class="head head1">C<span>our <i>clients</i> says</span></h3>
-                <ul id="flexiselDemo1">
-                    <li>
-                        <div class="wthree_testimonials_grid_main">
-                            <div class="wthree_testimonials_grid">
-                                <h4>Suspendisse sagittis nibh sit amet nisi imperdiet</h4>
-                                <p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
-                                    eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta,
-                                    convallis tortor a, ullamcorper magna.</p>
-                                <div class="wthree_testimonials_grid_pos">
-                                    <img src="images/2.png" alt=" " class="img-responsive"/>
-                                </div>
-                            </div>
-                            <div class="wthree_testimonials_grid1">
-                                <h5>Mark Henry</h5>
-                                <p>Teacher</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="wthree_testimonials_grid_main">
-                            <div class="wthree_testimonials_grid">
-                                <h4>Vestibulum sed convallis massa tincidunt</h4>
-                                <p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
-                                    eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta,
-                                    convallis tortor a, ullamcorper magna.</p>
-                                <div class="wthree_testimonials_grid_pos">
-                                    <img src="images/4.png" alt=" " class="img-responsive"/>
-                                </div>
-                            </div>
-                            <div class="wthree_testimonials_grid1">
-                                <h5>Linda Carl</h5>
-                                <p>Teacher</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="wthree_testimonials_grid_main">
-                            <div class="wthree_testimonials_grid">
-                                <h4>Integer id erat porta convallis tortor</h4>
-                                <p>Donec laoreet eu purus eu viverra. Vestibulum sed convallis massa,
-                                    eu aliquet massa. Suspendisse lacinia rutrum tincidunt. Integer id erat porta,
-                                    convallis tortor a, ullamcorper magna.</p>
-                                <div class="wthree_testimonials_grid_pos">
-                                    <img src="images/3.png" alt=" " class="img-responsive"/>
-                                </div>
-                            </div>
-                            <div class="wthree_testimonials_grid1">
-                                <h5>Michael Paul</h5>
-                                <p>Teacher</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <script type="text/javascript">
-                    $(window).load(function () {
-                        $("#flexiselDemo1").flexisel({
-                            visibleItems: 1,
-                            animationSpeed: 1000,
-                            autoPlay: true,
-                            autoPlaySpeed: 3000,
-                            pauseOnHover: true,
-                            enableResponsiveBreakpoints: true,
-                            responsiveBreakpoints: {
-                                portrait: {
-                                    changePoint: 480,
-                                    visibleItems: 1
-                                },
-                                landscape: {
-                                    changePoint: 640,
-                                    visibleItems: 1
-                                },
-                                tablet: {
-                                    changePoint: 768,
-                                    visibleItems: 1
-                                }
-                            }
-                        });
-
-                    });
-                </script>
-                <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-            </div>
-        </div>
+            @yield('testimonials')
         <!-- //testimonials -->
         <!-- newsletter -->
         <div class="newsletter">
@@ -228,57 +145,11 @@
             </div>
         </div>
         <!-- //newsletter -->
+
         <!-- footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="col-md-4 w3l_footer_grid">
-                    <h2><a href="index.html"><span>T</span>eaching</a></h2>
-                    <p>Vestibulum sed convallis massa, eu aliquet massa. Suspendisse
-                        lacinia rutrum tincidunt. Integer id erat porta, convallis tortor a,
-                        ullamcorper magna.</p>
-                </div>
-                <div class="col-md-3 w3l_footer_grid">
-                    <h3>Address</h3>
-                    <ul class="w3_address">
-                        <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span>
-                        </li>
-                        <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example
-                                .com</a></li>
-                        <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 w3l_footer_grid">
-                    <h3>Navigation</h3>
-                    <ul class="agileinfo_footer_grid_nav">
-                        <li><a href="services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a>
-                        </li>
-                        <li><a href="portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a>
-                        </li>
-                        <li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short
-                                Codes</a></li>
-                        <li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 w3l_footer_grid">
-                    <h3>Social Media</h3>
-                    <ul class="agileinfo_social_icons1 agileinfo_social">
-                        <li><a href="#" class="facebook"></a></li>
-                        <li><a href="#" class="twitter"></a></li>
-                        <li><a href="#" class="google"></a></li>
-                        <li><a href="#" class="pinterest"></a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-                <div class="w3agile_footer_copy">
-                    <p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-                </div>
-            </div>
-        </div>
+        @include('templates.partials.footer')
         <!-- //footer -->
-        <!-- for bootstrap working -->
-        <script src="js/bootstrap.js"></script>
-        <!-- //for bootstrap working -->
+
         <!-- here stars scrolling icon -->
         <script type="text/javascript">
             $(document).ready(function () {
@@ -296,5 +167,7 @@
             });
         </script>
         <!-- //here ends scrolling icon -->
+
+        @yield('scripts')
     </body>
 </html>

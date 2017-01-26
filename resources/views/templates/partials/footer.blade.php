@@ -33,8 +33,5 @@
             </ul>
         </div>
         <div class="clearfix"> </div>
-        <div class="w3agile_footer_copy">
-            <p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-        </div>
     </div>
 </div>
