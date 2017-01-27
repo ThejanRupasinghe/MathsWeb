@@ -22,8 +22,12 @@ Route::get('/services', function () {
     return view('Services.services');
 });
 
-Route::get('/mail', function () {
-    return view('Mail.mail');
+Route::get('/contact-me', function () {
+    return view('contact.index');
+});
+
+Route::get('/font', function () {
+    return view('fonts_test');
 });
 
 

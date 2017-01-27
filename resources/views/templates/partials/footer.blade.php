@@ -10,7 +10,7 @@
             <h3>Address</h3>
             <ul class="w3_address">
                 <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-                <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:tharinduthathsara20@gmail.com">tharinduthathsara20@gmail.com</a></li>
                 <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
             </ul>
         </div>
@@ -20,7 +20,7 @@
                 <li><a href="../../Services/services.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
                 <li><a href="../../Portfolio/portfolio.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
                 <li><a href="../../short-codes/short-codes.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
-                <li><a href="../../Mail/Mail.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
+                <li><a href="../../contact/index.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
             </ul>
         </div>
         <div class="col-md-3 w3l_footer_grid">

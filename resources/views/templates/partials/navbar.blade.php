@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1><a class="navbar-brand" href="index.html"><span>T</span>eaching</a></h1>
+                <h1><a class="navbar-brand" href="/"><span>T</span>eaching</a></h1>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -22,11 +22,11 @@
                         </ul>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="{{$home}}"><a href="index.html">Home</a></li>
-                        <li class="{{$downloads}}"><a href="services.html" class="hvr-bounce-to-bottom">Services</a></li>
-                        <li class="{{$gallery}}"><a href="portfolio.html" class="hvr-bounce-to-bottom">Portfolio</a></li>
-                        <li class="{{$results}}"><a href="short-codes.html" class="hvr-bounce-to-bottom">Short Codes</a></li>
-                        <li class="{{$contact}}"><a href="mail.html" class="hvr-bounce-to-bottom">Mail Us</a></li>
+                        <li class="{{$home}}"><a href="/">Home</a></li>
+                        <li class="{{$downloads}}"><a href="services.html" class="hvr-bounce-to-bottom">Downloads</a></li>
+                        <li class="{{$gallery}}"><a href="portfolio.html" class="hvr-bounce-to-bottom">Gallery</a></li>
+                        <li class="{{$results}}"><a href="short-codes.html" class="hvr-bounce-to-bottom">Results</a></li>
+                        <li class="{{$contact}}"><a href="/contact-me" class="hvr-bounce-to-bottom">Contact Me</a></li>
                     </ul>
                     <div class="clearfix"> </div>
                 </nav>

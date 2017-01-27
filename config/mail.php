@@ -4,14 +4,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Mail Driver
+    | contact Driver
     |--------------------------------------------------------------------------
     |
-    | Laravel supports both SMTP and PHP's "Mail" function as drivers for the
-    | sending of e-Mail. You may specify which one you're using throughout
-    | your application here. By default, Laravel is setup for SMTP Mail.
+    | Laravel supports both SMTP and PHP's "contact" function as drivers for the
+    | sending of e-contact. You may specify which one you're using throughout
+    | your application here. By default, Laravel is setup for SMTP contact.
     |
-    | Supported: "smtp", "Mail", "sendmail", "mailgun", "mandrill",
+    | Supported: "smtp", "contact", "sendmail", "mailgun", "mandrill",
     |            "ses", "sparkpost", "log"
     |
     */
@@ -25,7 +25,7 @@ return [
     |
     | Here you may provide the host address of the SMTP server used by your
     | applications. A default option is provided that is compatible with
-    | the Mailgun Mail service which will provide reliable deliveries.
+    | the Mailgun contact service which will provide reliable deliveries.
     |
     */
 
@@ -38,7 +38,7 @@ return [
     |
     | This is the SMTP port used by your application to deliver e-mails to
     | users of the application. Like the host we have set this value to
-    | stay compatible with the Mailgun e-Mail application by default.
+    | stay compatible with the Mailgun e-contact application by default.
     |
     */
 
@@ -62,11 +62,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | E-Mail Encryption Protocol
+    | E-contact Encryption Protocol
     |--------------------------------------------------------------------------
     |
     | Here you may specify the encryption protocol that should be used when
-    | the application send e-Mail messages. A sensible default using the
+    | the application send e-contact messages. A sensible default using the
     | transport layer security protocol should provide great security.
     |
     */
