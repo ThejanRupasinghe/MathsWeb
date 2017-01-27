@@ -31,6 +31,7 @@
 
         <!--Custom CSS-->
         <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{{ URL::asset('css/fonts.css') }}" rel="stylesheet" type="text/css" media="all"/>
         @yield('styling')
 
         <!--Custom JS-->

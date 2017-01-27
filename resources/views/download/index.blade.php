@@ -191,7 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-2 w3l_footer_grid">
 				<h3>Navigation</h3>
 				<ul class="agileinfo_footer_grid_nav">
-					<li><a href="services.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
+					<li><a href="index.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
 					<li><a href="../Portfolio/portfolio.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
 					<li><a href="../short-codes/short-codes.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
 					<li><a href="../contact/index.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>

@@ -15,15 +15,19 @@
 Route::get('/', function () {
     return view('home.index');
 });
-Route::get('/portfolio', function () {
-    return view('Portfolio.portfolio');
+Route::get('/gallery', function () {
+    return view('gallery.index');
 });
-Route::get('/services', function () {
-    return view('Services.services');
+Route::get('/downloads', function () {
+    return view('download.index');
 });
 
 Route::get('/contact-me', function () {
     return view('contact.index');
+});
+
+Route::get('/results', function () {
+    return view('results.index');
 });
 
 Route::get('/font', function () {

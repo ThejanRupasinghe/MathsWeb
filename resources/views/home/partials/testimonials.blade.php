@@ -1,7 +1,7 @@
 
 <div class="testimonials">
     <div class="container">
-        <h3 class="head head1">C<span>our <i>clients</i> says</span></h3>
+        <h3 class="head head1">C<span>අපේ  <i>දරුවන්ගේ</i> අදහස්</span></h3>
         <ul id="flexiselDemo1">
             <li>
                 <div class="wthree_testimonials_grid_main">

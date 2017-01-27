@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="../home/index.blade.php" class="hvr-bounce-to-bottom">Home</a></li>
 								<li><a href="../Services/services.blade.php" class="hvr-bounce-to-bottom">Services</a></li>
 								<li><a href="../Portfolio/portfolio.blade.php" class="hvr-bounce-to-bottom">Portfolio</a></li>
-								<li class="active"><a href="short-codes.blade.php">Short Codes</a></li>
+								<li class="active"><a href="index.blade.php">Short Codes</a></li>
 								<li><a href="../contact/index.blade.php" class="hvr-bounce-to-bottom">Mail Us</a></li>
 							</ul>
 						</nav>
@@ -660,7 +660,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul class="agileinfo_footer_grid_nav">
 					<li><a href="../Services/services.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
 					<li><a href="../Portfolio/portfolio.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
-					<li><a href="short-codes.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
+					<li><a href="index.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
 					<li><a href="../contact/index.blade.php"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
 				</ul>
 			</div>
