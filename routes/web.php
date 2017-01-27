@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/gallery', function () {
     return view('gallery.index');
 });
-Route::get('/downloads', function () {
+Route::get('/download', function () {
     return view('download.index');
 });
 

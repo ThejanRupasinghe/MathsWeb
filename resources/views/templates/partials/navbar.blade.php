@@ -23,7 +23,7 @@
                     </div>
                     <ul class="nav navbar-nav">
                         <li class="{{$home}}"><a href="/" class="hvr-bounce-to-bottom">Home</a></li>
-                        <li class="{{$downloads}}"><a href="/downloads" class="hvr-bounce-to-bottom">Downloads</a></li>
+                        <li class="{{$downloads}}"><a href="/download" class="hvr-bounce-to-bottom">Downloads</a></li>
                         <li class="{{$gallery}}"><a href="/gallery" class="hvr-bounce-to-bottom">Gallery</a></li>
                         <li class="{{$results}}"><a href="/results" class="hvr-bounce-to-bottom">Results</a></li>
                         <li class="{{$contact}}"><a href="/contact-me" class="hvr-bounce-to-bottom">Contact Me</a></li>
