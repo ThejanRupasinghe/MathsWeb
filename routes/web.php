@@ -35,20 +35,24 @@ Route::get('/font', function () {
 });
 
 
+
 Route::get('/carousel', function () {
     return view('practiceWeb');
 
 });
 
 Route::get('/test/download', function () {
-    return view('test');});
+    return view('test');
+});
 
+
+//LOGIN Routes
 Route::get('/login', function () {
-    return view('Login.login');});
-
+    return view('Login.login');
+});
 
 Route::patch('/login/user', [
-    'uses' => 'LoginControler@loginUser'
+    'uses' => 'LoginController@loginUser'
 ]);
 
 
