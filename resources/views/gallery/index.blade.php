@@ -9,7 +9,6 @@
 
 	@include('templates.partials.navbar',['home'=>'null','downloads'=>'null','gallery'=>'active','results'=>'null','contact'=>'null'])
 
-
 	<!-- Portfolio -->
 	<div class="portfolio">
 		<div class="container">
