@@ -8,7 +8,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1><a class="navbar-brand" href="/"><span>T</span>eaching</a></h1>
+                {{--<h1><a class="navbar-brand" href="/"><span>T</span>eaching</a></h1>--}}
+                <h1><a class="navbar-brand" href="/"><span>ත</span>රිඳු <span>ප</span>තිරණ</a></h1>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
