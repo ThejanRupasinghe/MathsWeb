@@ -15,10 +15,7 @@ class CreatePapersTable extends Migration
     {
         Schema::create('papers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('exam','5');
-            $table->string('subject','15');
-            $table->string('grade','2');
-            $table->string('link','100');
+            $table->string('name')->unique();
             $table->timestamps();
         });
     }

@@ -12,6 +12,6 @@ class ResourceController extends Controller
     public function showDownloads(){
         $papers=Paper::all();
       //  $papers = DB::table('users')->count();
-        return view('Downloads.showPapers',compact('papers'));
+        return view('download.index',compact('papers'));
     }
 }

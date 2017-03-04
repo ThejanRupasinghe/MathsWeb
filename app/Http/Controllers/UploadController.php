@@ -22,37 +22,29 @@ class UploadController extends Controller
         return redirect()->back();
 
     }
+
     public function uploadPaper(Request $request){
 
-
         $this->validate($request, [
-            'name'=> 'required|min:2|max:8'
-
+            'name'=> 'required|min:2|unique:papers'
         ]);
 
-
         $file=$request->file('paper');
+
         if ($file->getClientMimeType() !== 'application/pdf')
         {
-            
             session()->flash('msg', 'Sorry! incorrect file type.');
             return redirect()->back();
         }
-        $fileName=$file->getClientOriginalName();
-        $request->file('paper')->move('files/pdf',$fileName);
+
+//        $fileName=$file->getClientOriginalName();
+        $fileName = $request->name . ".pdf";
+        $file->move('files/pdf',$fileName);
         session()->flash('msg', 'Paper has been successfully added.');
 
-
         $paper=new Paper();
-        $paper->name=$fileName;
-        $paper->exam=$request->exam;
-        $paper->subject=$request->subject;
-        $paper->grade=$request->grade;
-        $paper->link=$request->link;
+        $paper->name=$request->name;
         $paper->save();
-
-
-
 
         return redirect()->back();
 

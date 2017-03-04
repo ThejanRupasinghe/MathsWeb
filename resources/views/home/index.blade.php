@@ -66,24 +66,6 @@
     @include('home.partials.testimonials')
     <!-- //testimonials -->
 
-    <!-- newsletter -->
-    <div class="newsletter">
-        <div class="container">
-            <div class="col-md-7 w3ls_newsletter_left">
-                <h3>N<span>Subscribe to our newsletter</span></h3>
-                <p>Suspendisse lacinia rutrum tincidunt.</p>
-            </div>
-            <div class="col-md-5 w3ls_newsletter_right">
-                <form action="#" method="post">
-                    <input type="email" name="Email" value="Email" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                    <input type="submit" value=" ">
-                </form>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!-- //newsletter -->
 @endsection
 
 

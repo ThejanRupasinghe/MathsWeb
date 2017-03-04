@@ -69,7 +69,6 @@
 
         @yield('body')
 
-
         <!-- footer -->
         @include('templates.partials.footer')
         <!-- //footer -->
