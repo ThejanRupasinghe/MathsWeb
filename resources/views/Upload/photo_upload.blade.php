@@ -31,37 +31,9 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <select class="form-control" name="class">
-                                <option value="">-- Select Exam --</option>
-                                <option value="c1">O/L</option>
-                                <option value="c2">A/L</option>
-
-                            </select>
-
+                            <input class="form-control" placeholder="Enter Name to display" value="{{old('relationship')}}" type="text"
+                                   name="name" id="phone" onkeyup="Validate(this)" required/>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group"><select class="form-control" name="subject">
-                                <option value="">-- Select Subject --</option>
-                                <option value="c1">Mathematics</option>
-                                <option value="c2">Chemistry</option>
-                                <option value="c3">Physics</option>
-
-
-                            </select></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group"><select class="form-control" name="grade">
-                                <option value="">-- Select Grade --</option>
-                                <option value="c1">10</option>
-                                <option value="c2">9</option>
-                                <option value="c3">8</option>
-
-                            </select></div>
                     </div>
                 </div>
 

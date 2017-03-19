@@ -19,6 +19,9 @@ Route::get('/gallery', function () {
     return view('gallery.index');
 });
 Route::get('/download', [
+    'uses' => 'ResourceController@loginStudent'
+]);
+Route::patch('/show/download', [
     'uses' => 'ResourceController@showDownloads'
 ]);
 

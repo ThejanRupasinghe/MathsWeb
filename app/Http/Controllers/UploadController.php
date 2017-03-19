@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Paper;
+use App\Video;
 use Illuminate\Http\Request;
 
 class UploadController extends Controller
@@ -15,6 +16,19 @@ class UploadController extends Controller
     }
     
     public function uploadPhoto(Request $request){
+
+        $this->validate($request, [
+            'name'=> 'required|min:2|unique:papers'
+        ]);
+
+        $file=$request->file('photo');
+
+//        if ($file->getClientMimeType() !== 'application/jpg')
+//        {
+//            session()->flash('msg', 'Sorry! incorrect file type.');
+//            return redirect()->back();
+//        }
+//        
         $file=$request->file('image');
         $fileName=$file->getClientOriginalName();
         $request->file('image')->move('files/images',$fileName);
@@ -45,6 +59,27 @@ class UploadController extends Controller
         $paper=new Paper();
         $paper->name=$request->name;
         $paper->save();
+
+        return redirect()->back();
+
+    }
+
+
+    public function uploadVideo(Request $request){
+
+        $this->validate($request, [
+            'name'=> 'required|min:2|unique:videos'
+        ]);
+
+
+
+        
+        $video=new Video();
+        $video->name=$request->name;
+        $video->link=$request->link;
+        $video->save();
+        session()->flash('msg', 'Video has been successfully added.');
+
 
         return redirect()->back();
 
