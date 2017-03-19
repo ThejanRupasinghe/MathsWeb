@@ -11,7 +11,7 @@ class ResourceController extends Controller
 {
     //
     public function showDownloads(Request $request){
-        $student = DB::table('students')->where('userId', strval($request->userId))->first();
+        $student = DB::table('students')->where('studentId', strval($request->studentId))->first();
 
         if($student==Null){
             session()->flash('msg', 'Username and password are incorrect.');
