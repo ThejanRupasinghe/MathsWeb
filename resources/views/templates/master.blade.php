@@ -70,7 +70,7 @@
         @yield('body')
 
         <!-- footer -->
-        @include('templates.partials.footer')
+        {{--@include('templates.partials.footer')--}}
         <!-- //footer -->
 
         <!-- here stars scrolling icon -->

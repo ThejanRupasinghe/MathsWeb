@@ -19,6 +19,7 @@
 					</a>
 				@endforeach
 				<div class="clearfix"> </div>
+					{{ $papers->links() }}
 			</div>
 		</div>
 	</div>

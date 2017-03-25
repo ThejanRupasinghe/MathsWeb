@@ -6,6 +6,7 @@ use App\Paper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class ResourceController extends Controller
 {
@@ -14,20 +15,19 @@ class ResourceController extends Controller
         $student = DB::table('students')->where('studentId', strval($request->studentId))->first();
 
         if($student==Null){
-            session()->flash('msg', 'Username and password are incorrect.');
+            session()->flash('msg', 'Student ID is incorrect.');
             return redirect()->back();
         }
 
-        $pass=Auth::attempt(['username'=>$request['name'],'password'=>$request['password']]);
 
-        if($pass){
+        if($student){
             session()->flash('msg', 'Log In is successful.');
-            $papers=Paper::all();
+            $papers=DB::table('papers')->paginate(6);
             //  $papers = DB::table('users')->count();
             return view('download.index',compact('papers'));
         }
         else{
-            session()->flash('msg', 'Username or password is incorrect.');
+            session()->flash('msg', 'Student ID is incorrect.');
             return redirect()->back();
         }
         

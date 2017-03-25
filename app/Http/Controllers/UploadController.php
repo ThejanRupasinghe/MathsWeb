@@ -14,6 +14,9 @@ class UploadController extends Controller
     public function showPaperUpload(){
         return view('Upload.paper_upload');
     }
+    public function showVideoUpload(){
+        return view('Upload.video_upload');
+    }
     
     public function uploadPhoto(Request $request){
 

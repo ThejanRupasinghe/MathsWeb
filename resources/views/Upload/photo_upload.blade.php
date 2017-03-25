@@ -8,8 +8,6 @@
             <div class="page-header">
                 <h1 class="col-lg-offset-3">Upload Photo</h1></div>
 
-
-
             @if (Session::has('msg'))
                 <div class="alert alert-success">{{ Session::get('msg') }}</div>
             @endif
@@ -22,7 +20,6 @@
                     </ul>
                 </div>
             @endif
-
 
 
             <form class="" action="/upload/photo" method="post" enctype="multipart/form-data">

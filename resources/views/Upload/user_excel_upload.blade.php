@@ -6,8 +6,7 @@
     <div class="container">
         <div class=" col-lg-4 col-lg-offset-3">
             <div class="page-header">
-                <h1 class="col-lg-offset-3">Upload Paper</h1>
-            </div>
+                <h1 class="col-lg-offset-3">Upload Student Excel Sheet</h1></div>
 
             @if (Session::has('msg'))
                 <div class="alert alert-success">{{ Session::get('msg') }}</div>
@@ -23,29 +22,17 @@
             @endif
 
 
-            <form class="" action="/upload/paper" method="post" enctype="multipart/form-data">
-                {{method_field('PATCH')}}
+            <form class="" action="/upload/user_excel" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
-
-               <div class="row">
-                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                       <div class="form-group">
-                          <input class="form-control" placeholder="Enter Name to display" value="{{old('relationship')}}" type="text"
-                      name="name" id="phone" onkeyup="Validate(this)" required/>
-                       </div>
-                   </div>
-               </div>
-
-               <div class="row">
+                <div class="row">
                     <div class="col-md-12">
-                        <input type="file" id="inputimages" name="paper"/>
-                   </div>
-               </div>
-
+                        <input type="file" name="user_excel"/>
+                    </div>
+                </div>
                 <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary pull-right" value="post">
+                    <button type="submit" class="btn btn-primary pull-right" value="post">
                         Submit
-                        </button>
+                    </button>
                 </div>
                 {{csrf_field()}}
             </form>
@@ -62,7 +49,7 @@
                 reader.onload=function (e) {
                     $('#showimages').attr('src',e.target.result);
 
-                };
+                }
                 reader.readAsDataURL(input.files[0]);
             }
         }
