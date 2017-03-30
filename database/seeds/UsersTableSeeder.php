@@ -17,6 +17,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'admin',
             'remember_token'=>'RfcTOJEBDe95nwVtFPkv3ocdISbiR8PrGnaxmDkuJ3CaVSoODRjaADm4ZxYU',
             'password' => bcrypt('admin'),
+            'userType'=> 1
         ]);
     }
 }

@@ -12,15 +12,21 @@
 */
 
 //PAGE ROUTES
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', [
+    'as' =>'home',
+    function () {
+        return view('home.index');
+    }
+]);
+
 Route::get('/gallery', function () {
     return view('gallery.index');
 });
+
 Route::get('/download', [
    'uses' => 'ResourceController@loginStudent'
 ]);
+
 Route::patch('/show/download', [
     'uses' => 'ResourceController@showDownloads'
 ]);
@@ -28,7 +34,7 @@ Route::patch('/show/download', [
 Route::get('/fetch/downloads', [
     'uses' => 'ResourceController@fetchDownloads',
     'as' =>'fetchDownloads'
-]);
+])->middleware('auth');;
 
 Route::get('/contact-me', function () {
     return view('contact.index');
@@ -37,6 +43,11 @@ Route::get('/contact-me', function () {
 Route::get('/results', function () {
     return view('results.index');
 });
+
+Route::get('/logout-student', function () {
+    Auth::logout();
+    return redirect()->route('home');
+})->middleware('auth');
 
 Route::get('/font', function () {
     return view('fonts_test');
@@ -68,7 +79,7 @@ Route::patch('/login/user', [
 //LOGIN OVER
 
 //ADMIN ROUTES
-Route::group(['middleware'=> 'auth'], function() {
+Route::group(['middleware'=> 'admin'], function() {
     Route::get('/select/photo', 'UploadController@showPhotoUpload');
     Route::get('/select/video', 'UploadController@showVideoUpload');
     Route::get('/select/paper', 'UploadController@showPaperUpload');

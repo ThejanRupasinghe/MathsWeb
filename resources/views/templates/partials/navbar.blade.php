@@ -28,7 +28,11 @@
                         <li class="{{$gallery}}"><a href="/gallery" class="hvr-bounce-to-bottom">Gallery</a></li>
                         <li class="{{$results}}"><a href="/results" class="hvr-bounce-to-bottom">Results</a></li>
                         <li class="{{$contact}}"><a href="/contact-me" class="hvr-bounce-to-bottom">Contact Me</a></li>
+                        @if(Auth::check())
+                            <li><a href="/logout-student" class="hvr-bounce-to-bottom">Logout</a></li>
+                        @endif
                     </ul>
+
                     <div class="clearfix"> </div>
                 </nav>
             </div>
