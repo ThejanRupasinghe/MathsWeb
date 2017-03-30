@@ -6,6 +6,7 @@
 
 	@include('home.partials.carousel')
 
+    @include('home.partials.testimonials')
 
 
 @endsection
