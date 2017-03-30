@@ -25,7 +25,7 @@ class ExcelController extends Controller
             if(!empty($data) && $data->count()){
                 foreach ($data as $rows) {
                     foreach ($rows as $row) {
-                        $insert[] = ['name' => $row->name, 'studentId' => $row->studentid,'role'=>'student'];
+                        $insert[] = ['name' => $row->name, 'username' => $row->studentid, 'password' => bcrypt($row->studentid)];
                     }
                 }
                 if(!empty($insert)){

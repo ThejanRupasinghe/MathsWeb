@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 
 class ResourceController extends Controller
 {
-    //
+
     public function showDownloads(Request $request){
 
         //$student = DB::table('students')->where('studentId', strval($request->studentId))->first();
@@ -21,12 +21,11 @@ class ResourceController extends Controller
             return redirect()->back();
         }
 
+        $pass=Auth::attempt(['username'=>$request['studentId'],'password'=>$request['studentId']]);
 
-        if($student){
+        if($pass){
             session()->flash('msg', 'Log In is successful.');
             return redirect()->route('fetchDownloads');
-           return view('download.index',compact('papers'));
-
         }
         else{
             session()->flash('msg', 'Student ID is incorrect.');

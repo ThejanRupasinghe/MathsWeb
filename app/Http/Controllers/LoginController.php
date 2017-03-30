@@ -15,13 +15,14 @@ class LoginController extends Controller
     public function loginUser(Request $request)
     {
 
-
         $user = DB::table('users')->where('username', strval($request->username))->first();
         if($user==Null){
             session()->flash('msg', 'Username and password are incorrect.');
             return redirect()->back();
         }
-     $pass=Auth::attempt(['username'=>$request['username'],'password'=>$request['password']]);
+
+        $pass=Auth::attempt(['username'=>$request['username'],'password'=>$request['password']]);
+
         if($pass){
             session()->flash('msg', 'Log In is successful.');
             return view('Login.adminHome', compact('user'));
