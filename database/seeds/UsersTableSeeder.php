@@ -11,10 +11,9 @@ class UsersTableSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        //
+    {//
         DB::table('users')->insert([
-            'name' => 'Admin',
+            
             'username' => 'admin',
             'remember_token'=>'RfcTOJEBDe95nwVtFPkv3ocdISbiR8PrGnaxmDkuJ3CaVSoODRjaADm4ZxYU',
             'password' => bcrypt('admin'),

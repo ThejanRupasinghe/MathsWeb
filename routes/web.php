@@ -25,6 +25,11 @@ Route::patch('/show/download', [
     'uses' => 'ResourceController@showDownloads'
 ]);
 
+Route::get('/fetch/downloads', [
+    'uses' => 'ResourceController@fetchDownloads',
+    'as' =>'fetchDownloads'
+]);
+
 Route::get('/contact-me', function () {
     return view('contact.index');
 });
@@ -63,29 +68,7 @@ Route::patch('/login/user', [
 //LOGIN OVER
 
 //ADMIN ROUTES
-//Route::group(['middleware'=> 'auth'], function() {
-//    Route::get('/select/photo', 'UploadController@showPhotoUpload');
-//    Route::get('/select/video', 'UploadController@showVideoUpload');
-//    Route::get('/select/paper', 'UploadController@showPaperUpload');
-//    Route::get('/select/student_excel','ExcelController@showStudentExcel');
-//
-//    Route::patch('/upload/photo', 'UploadController@uploadPhoto');
-//    Route::patch('/upload/video', 'UploadController@uploadVideo');
-//    Route::patch('/upload/paper', 'UploadController@uploadPaper');
-//    Route::post('/upload/user_excel', 'ExcelController@addStudentExcel');
-//
-//    Route::get('/logout',[
-//        'uses'=>'LoginController@logoutUser',
-//        'as'=>'logout'
-//    ]);
-//});
-//ADMIN OVER
-
-
-
-//to test
-
-
+Route::group(['middleware'=> 'auth'], function() {
     Route::get('/select/photo', 'UploadController@showPhotoUpload');
     Route::get('/select/video', 'UploadController@showVideoUpload');
     Route::get('/select/paper', 'UploadController@showPaperUpload');
@@ -95,6 +78,28 @@ Route::patch('/login/user', [
     Route::patch('/upload/video', 'UploadController@uploadVideo');
     Route::patch('/upload/paper', 'UploadController@uploadPaper');
     Route::post('/upload/user_excel', 'ExcelController@addStudentExcel');
+
+    Route::get('/logout',[
+        'uses'=>'LoginController@logoutUser',
+        'as'=>'logout'
+    ]);
+});
+//ADMIN OVER
+
+
+
+//to test
+//
+//
+//    Route::get('/select/photo', 'UploadController@showPhotoUpload');
+//    Route::get('/select/video', 'UploadController@showVideoUpload');
+//    Route::get('/select/paper', 'UploadController@showPaperUpload');
+//    Route::get('/select/student_excel','ExcelController@showStudentExcel');
+//
+//    Route::patch('/upload/photo', 'UploadController@uploadPhoto');
+//    Route::patch('/upload/video', 'UploadController@uploadVideo');
+//    Route::patch('/upload/paper', 'UploadController@uploadPaper');
+//    Route::post('/upload/user_excel', 'ExcelController@addStudentExcel');
 
 
 Route::get('/download/{file}','DownloadController@getDownload');

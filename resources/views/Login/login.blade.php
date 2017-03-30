@@ -20,7 +20,7 @@
                 <form class="login-form" method="post" action="/login/user">
                     {{method_field('PATCH')}}
                     <input  name="username" value="{{old('index')}}" placeholder="User name" required/>
-                    <input type="password" name=password placeholder="password" required/>
+                    <input type="password" name="password" placeholder="password" required/>
                     <button>login</button>
                     {{csrf_field()}}
                 </form>

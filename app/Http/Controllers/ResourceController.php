@@ -14,17 +14,17 @@ class ResourceController extends Controller
     public function showDownloads(Request $request){
 
         //$student = DB::table('students')->where('studentId', strval($request->studentId))->first();
-        $student = DB::table('users')->where('username', strval($request->username))->first();
+        $student = DB::table('users')->where('id', strval($request->studentId))->first();
 
         if($student==Null){
-            session()->flash('msg', 'Student ID is incorrect.');
+            session()->flash('msg', 'User ID is incorrect.');
             return redirect()->back();
         }
 
 
         if($student){
             session()->flash('msg', 'Log In is successful.');
-            $papers=DB::table('papers')->paginate(6);
+            return redirect()->route('fetchDownloads');
            return view('download.index',compact('papers'));
 
         }
@@ -34,6 +34,19 @@ class ResourceController extends Controller
         }
         
     }
+
+    public function fetchDownloads()
+    {
+
+        //$student = DB::table('students')->where('studentId', strval($request->studentId))->first();
+
+        $papers = DB::table('papers')->paginate(6);
+        return view('download.index', compact('papers'));
+
+
+    }
+
+
     public function loginStudent(){
         return view('MemberLogin.studentLogin');
 

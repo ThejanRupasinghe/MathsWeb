@@ -25,11 +25,11 @@ class ExcelController extends Controller
             if(!empty($data) && $data->count()){
                 foreach ($data as $rows) {
                     foreach ($rows as $row) {
-                        $insert[] = ['name' => $row->name, 'studentId' => $row->studentid];
+                        $insert[] = ['name' => $row->name, 'studentId' => $row->studentid,'role'=>'student'];
                     }
                 }
                 if(!empty($insert)){
-                    DB::table('students')->insert($insert);
+                    DB::table('users')->insert($insert);
                     session()->flash('msg', 'Students successfully added.');
                     return redirect()->back();
                 }
