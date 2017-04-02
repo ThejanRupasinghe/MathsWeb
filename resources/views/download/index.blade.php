@@ -5,16 +5,16 @@
 	@include('templates.partials.navbar',['home'=>'null','downloads'=>'active','gallery'=>'null','results'=>'null','contact'=>'null'])
 
    <!-- //Services -->
-   <div class="services">
+   {{--<div class="services">--}}
 	   <div class="container">
 		   {{--<h3 class="head head_services">P<span>&nbsp;&nbsp;Our Special Model<i> Papers</i></span></h3>--}}
 
 		   <div class="row">
-			   <div class="col-lg-7 col-lg-offset-1">
+			   <div class="col-lg-9">
 				   <ul id="myTab" class="nav nav-tabs text-center" role="tablist">
-					   <li role="presentation" class="{{$active_paper}}" style="font-weight: 600"><a href="{{url('documents/papers')}}" role="tab" aria-controls="home" aria-expanded="true">Model Papers</a></li>
-					   <li role="presentation" class="{{$active_note}}" style="font-weight: 600"><a href="{{url('documents/notes')}}" role="tab" aria-controls="learning">Notes</a></li>
-					   <li role="presentation" class="{{$active_video}}" style="font-weight: 600"><a href="{{url('documents/videos')}}" role="tab" aria-controls="playing">Videos</a></li>
+					   <li role="presentation" class="{{$active_paper}}" style="font-weight: 600; font-size: 120%"><a href="{{url('documents/papers')}}" role="tab" aria-controls="home" aria-expanded="true">Model Papers</a></li>
+					   <li role="presentation" class="{{$active_note}}" style="font-weight: 600; font-size: 120%"><a href="{{url('documents/notes')}}" role="tab" aria-controls="learning">Notes</a></li>
+					   <li role="presentation" class="{{$active_video}}" style="font-weight: 600; font-size: 120%"><a href="{{url('documents/videos')}}" role="tab" aria-controls="playing">Videos</a></li>
 				   </ul>
 			   </div>
 		   </div>
@@ -55,7 +55,7 @@
 			   <div class="text-center">{{ $documents->links() }}</div>
 		   </div>
 	   </div>
-   </div>
+   {{--</div>--}}
 
 
 
