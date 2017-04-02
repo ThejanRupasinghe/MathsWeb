@@ -43,14 +43,18 @@ class ResourceController extends Controller
             $active_paper = "active";
             $active_note = "null";
             $active_video = "null";
-            return view('download.index', compact('documents','active_paper','active_note','active_video'));
         }else if($type=="notes"){
             $documents = DB::table('notes')->paginate(6);
             $active_paper = "null";
             $active_note = "active";
             $active_video = "null";
-            return view('download.index', compact('documents','active_paper','active_note','active_video'));
+        }else if($type=="videos"){
+            $documents = DB::table('videos')->paginate(4);
+            $active_paper = "null";
+            $active_note = "null";
+            $active_video = "active";
         }
+        return view('download.index', compact('documents','active_paper','active_note','active_video'));
     }
 
     public function getPDF($type, $name){

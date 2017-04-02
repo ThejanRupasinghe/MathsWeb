@@ -14,31 +14,43 @@
 				   <ul id="myTab" class="nav nav-tabs text-center" role="tablist">
 					   <li role="presentation" class="{{$active_paper}}" style="font-weight: 600"><a href="{{url('documents/papers')}}" role="tab" aria-controls="home" aria-expanded="true">Model Papers</a></li>
 					   <li role="presentation" class="{{$active_note}}" style="font-weight: 600"><a href="{{url('documents/notes')}}" role="tab" aria-controls="learning">Notes</a></li>
-					   <li role="presentation" class="{{$active_video}}" style="font-weight: 600"><a href="#playing" role="tab" aria-controls="playing">Videos</a></li>
+					   <li role="presentation" class="{{$active_video}}" style="font-weight: 600"><a href="{{url('documents/videos')}}" role="tab" aria-controls="playing">Videos</a></li>
 				   </ul>
 			   </div>
 		   </div>
 
 		   <div class="agileinfo_services_grids">
-			   @foreach($documents as $document)
 				   @if($active_paper=="active")
-					   <a href="{{url('documents/papers/'.$document->name)}}" target="_blank">
-						   <div class="col-md-4 agileinfo_services_grid">
-							   <div class="agileinfo_services_grid1">
-								   <h4>{{$document->name}}</h4>
+					   @foreach($documents as $document)
+						   <a href="{{url('documents/papers/'.$document->name)}}" target="_blank">
+							   <div class="col-md-4 agileinfo_services_grid">
+								   <div class="agileinfo_services_grid1">
+									   <h4>{{$document->name}}</h4>
+								   </div>
 							   </div>
-						   </div>
-					   </a>
-					@elseif($active_note=="active")
-					   <a href="{{url('documents/notes/'.$document->name)}}" target="_blank">
-						   <div class="col-md-4 agileinfo_services_grid">
-							   <div class="agileinfo_services_grid1">
-								   <h4>{{$document->name}}</h4>
+						   </a>
+					   @endforeach
+			   		@elseif($active_note=="active")
+					   @foreach($documents as $document)
+						   <a href="{{url('documents/notes/'.$document->name)}}" target="_blank">
+							   <div class="col-md-4 agileinfo_services_grid">
+								   <div class="agileinfo_services_grid1">
+									   <h4>{{$document->name}}</h4>
+								   </div>
 							   </div>
-						   </div>
-					   </a>
+						   </a>
+					   @endforeach
+				   @elseif($active_video=="active")
+					   <div class="row">
+						   @foreach($documents as $document)
+								   <div class="col-lg-6 text-center">
+									   <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$document->link}}" frameborder="0" allowfullscreen></iframe>
+									   <h3>{{$document->name}}</h3>
+									   <br>
+								   </div>
+						   @endforeach
+					   </div>
 				   @endif
-			   @endforeach
 			   <div class="clearfix"> </div>
 			   <div class="text-center">{{ $documents->links() }}</div>
 		   </div>
