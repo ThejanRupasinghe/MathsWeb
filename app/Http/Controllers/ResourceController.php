@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class ResourceController extends Controller
 {
@@ -38,19 +39,25 @@ class ResourceController extends Controller
     {
         //$student = DB::table('students')->where('studentId', strval($request->studentId))->first();
         if($type=="papers"){
-            $papers = DB::table('papers')->paginate(6);
+            $documents = DB::table('papers')->paginate(6);
             $active_paper = "active";
             $active_note = "null";
             $active_video = "null";
-            return view('download.index', compact('papers','active_paper','active_note','active_video'));
+            return view('download.index', compact('documents','active_paper','active_note','active_video'));
         }else if($type=="notes"){
-            $papers = DB::table('notes')->paginate(6);
+            $documents = DB::table('notes')->paginate(6);
             $active_paper = "null";
             $active_note = "active";
             $active_video = "null";
-            return view('download.index', compact('papers','active_paper','active_note','active_video'));
+            return view('download.index', compact('documents','active_paper','active_note','active_video'));
         }
+    }
 
+    public function getPDF($type, $name){
+        $path='/documents/'.$type.'/'.$name.'.pdf';
+        $pdf=Storage::disk('local')->get($path);
+        ob_end_clean();
+        return response($pdf,200,['Content-type'=>'application/pdf']);
     }
 
 

@@ -36,6 +36,11 @@ Route::get('/documents/{type}', [
     'as' =>'fetchDownloads'
 ])->middleware('auth');;
 
+Route::get('/documents/{type}/{name}',[
+    'uses' => 'ResourceController@getPDF',
+    'as' =>'getPDF'
+])->middleware('auth');
+
 Route::get('/contact-me', function () {
     return view('contact.index');
 });

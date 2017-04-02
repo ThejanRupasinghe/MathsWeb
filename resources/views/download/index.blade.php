@@ -20,17 +20,27 @@
 		   </div>
 
 		   <div class="agileinfo_services_grids">
-			   @foreach($papers as $paper)
-				   <a href="files/pdf/{{$paper->name}}.pdf" target="_blank">
-					   <div class="col-md-4 agileinfo_services_grid">
-						   <div class="agileinfo_services_grid1">
-							   <h4>{{$paper->name}}</h4>
+			   @foreach($documents as $document)
+				   @if($active_paper=="active")
+					   <a href="{{url('documents/papers/'.$document->name)}}" target="_blank">
+						   <div class="col-md-4 agileinfo_services_grid">
+							   <div class="agileinfo_services_grid1">
+								   <h4>{{$document->name}}</h4>
+							   </div>
 						   </div>
-					   </div>
-				   </a>
+					   </a>
+					@elseif($active_note=="active")
+					   <a href="{{url('documents/notes/'.$document->name)}}" target="_blank">
+						   <div class="col-md-4 agileinfo_services_grid">
+							   <div class="agileinfo_services_grid1">
+								   <h4>{{$document->name}}</h4>
+							   </div>
+						   </div>
+					   </a>
+				   @endif
 			   @endforeach
 			   <div class="clearfix"> </div>
-			   <div class="text-center">{{ $papers->links() }}</div>
+			   <div class="text-center">{{ $documents->links() }}</div>
 		   </div>
 	   </div>
    </div>
