@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notes;
 use App\Paper;
 use App\Video;
 use Illuminate\Http\Request;
@@ -11,8 +12,8 @@ class UploadController extends Controller
     public function showPhotoUpload(){
         return view('Upload.photo_upload');
     }
-    public function showPaperUpload(){
-        return view('Upload.paper_upload');
+    public function showDocumentUpload(){
+        return view('Upload.document_upload');
     }
     public function showVideoUpload(){
         return view('Upload.video_upload');
@@ -40,30 +41,58 @@ class UploadController extends Controller
 
     }
 
-    public function uploadPaper(Request $request){
+    public function uploadDocument(Request $request){
 
-        $this->validate($request, [
-            'name'=> 'required|min:2|unique:papers'
-        ]);
+        if($request->type==1){
 
-        $file=$request->file('paper');
+            $this->validate($request, [
+                'name'=> 'required|min:2|unique:papers'
+            ]);
 
-        if ($file->getClientMimeType() !== 'application/pdf')
-        {
-            session()->flash('msg', 'Sorry! incorrect file type.');
+            $file=$request->file('paper');
+
+            if ($file->getClientMimeType() !== 'application/pdf')
+            {
+                session()->flash('msg', 'Sorry! incorrect file type.');
+                return redirect()->back();
+            }
+
+            $fileName = $request->name . ".pdf";
+//            $file->move('files/pdf',$fileName);
+            $file->move(base_path() . '/storage/app/documents/papers', $fileName);
+            session()->flash('msg', 'Paper has been successfully added.');
+
+            $paper=new Paper();
+            $paper->name=$request->name;
+            $paper->save();
+
+            return redirect()->back();
+
+        }else{
+
+            $this->validate($request, [
+                'name'=> 'required|min:2|unique:notes'
+            ]);
+
+            $file=$request->file('paper');
+
+            if ($file->getClientMimeType() !== 'application/pdf')
+            {
+                session()->flash('msg', 'Sorry! incorrect file type.');
+                return redirect()->back();
+            }
+
+            $fileName = $request->name . ".pdf";
+//            $file->move('files/pdf',$fileName);
+            $file->move(base_path() . '/storage/app/documents/notes', $fileName);
+            session()->flash('msg', 'Note has been successfully added.');
+
+            $note=new Notes();
+            $note->name=$request->name;
+            $note->save();
+
             return redirect()->back();
         }
-
-//        $fileName=$file->getClientOriginalName();
-        $fileName = $request->name . ".pdf";
-        $file->move('files/pdf',$fileName);
-        session()->flash('msg', 'Paper has been successfully added.');
-
-        $paper=new Paper();
-        $paper->name=$request->name;
-        $paper->save();
-
-        return redirect()->back();
 
     }
 
@@ -74,15 +103,11 @@ class UploadController extends Controller
             'name'=> 'required|min:2|unique:videos'
         ]);
 
-
-
-        
         $video=new Video();
         $video->name=$request->name;
         $video->link=$request->link;
         $video->save();
         session()->flash('msg', 'Video has been successfully added.');
-
 
         return redirect()->back();
 

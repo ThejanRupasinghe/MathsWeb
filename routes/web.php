@@ -31,7 +31,7 @@ Route::patch('/show/download', [
     'uses' => 'ResourceController@showDownloads'
 ]);
 
-Route::get('/fetch/downloads', [
+Route::get('/documents/{type}', [
     'uses' => 'ResourceController@fetchDownloads',
     'as' =>'fetchDownloads'
 ])->middleware('auth');;
@@ -82,12 +82,12 @@ Route::patch('/login/user', [
 Route::group(['middleware'=> 'admin'], function() {
     Route::get('/select/photo', 'UploadController@showPhotoUpload');
     Route::get('/select/video', 'UploadController@showVideoUpload');
-    Route::get('/select/paper', 'UploadController@showPaperUpload');
+    Route::get('/select/document', 'UploadController@showDocumentUpload');
     Route::get('/select/student_excel','ExcelController@showStudentExcel');
 
     Route::patch('/upload/photo', 'UploadController@uploadPhoto');
     Route::patch('/upload/video', 'UploadController@uploadVideo');
-    Route::patch('/upload/paper', 'UploadController@uploadPaper');
+    Route::patch('/upload/document', 'UploadController@uploadDocument');
     Route::post('/upload/user_excel', 'ExcelController@addStudentExcel');
 
     Route::get('/logout',[
@@ -117,7 +117,3 @@ Route::get('/download/{file}','DownloadController@getDownload');
 
 
 //Route::get('/downloads','ResourceController@showDownloads');
-
-
-
-

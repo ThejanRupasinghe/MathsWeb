@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <nav class="menu menu--shylock">
                     <ul class="nav navbar-nav">
-                        <li><a href="/select/paper" class="hvr-bounce-to-bottom">Upload Paper</a></li>
+                        <li><a href="/select/document" class="hvr-bounce-to-bottom">Upload Document</a></li>
                         <li><a href="/select/photo" class="hvr-bounce-to-bottom">Upload Photo</a></li>
                         <li><a href="/select/video" class="hvr-bounce-to-bottom">Upload Video</a></li>
                         <li><a href="#" class="hvr-bounce-to-bottom">Results</a></li>

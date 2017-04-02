@@ -25,7 +25,7 @@ class ResourceController extends Controller
 
         if($pass){
             session()->flash('msg', 'Log In is successful.');
-            return redirect()->route('fetchDownloads');
+            return redirect()->route('fetchDownloads',['type'=>'papers']);
         }
         else{
             session()->flash('msg', 'Student ID is incorrect.');
@@ -34,12 +34,22 @@ class ResourceController extends Controller
         
     }
 
-    public function fetchDownloads()
+    public function fetchDownloads($type)
     {
         //$student = DB::table('students')->where('studentId', strval($request->studentId))->first();
-
-        $papers = DB::table('papers')->paginate(6);
-        return view('download.index', compact('papers'));
+        if($type=="papers"){
+            $papers = DB::table('papers')->paginate(6);
+            $active_paper = "active";
+            $active_note = "null";
+            $active_video = "null";
+            return view('download.index', compact('papers','active_paper','active_note','active_video'));
+        }else if($type=="notes"){
+            $papers = DB::table('notes')->paginate(6);
+            $active_paper = "null";
+            $active_note = "active";
+            $active_video = "null";
+            return view('download.index', compact('papers','active_paper','active_note','active_video'));
+        }
 
     }
 
