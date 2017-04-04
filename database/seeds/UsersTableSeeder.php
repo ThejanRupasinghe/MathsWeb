@@ -14,9 +14,9 @@ class UsersTableSeeder extends Seeder
     {//
         DB::table('users')->insert([
             'name'=>'Tharindu Pathirana',
-            'username' => 'admin',
+            'username' => 'tharindupathirana',
             'remember_token'=>'RfcTOJEBDe95nwVtFPkv3ocdISbiR8PrGnaxmDkuJ3CaVSoODRjaADm4ZxYU',
-            'password' => bcrypt('admin'),
+            'password' => bcrypt('th7084749'),
             'userType'=> 1
         ]);
     }
