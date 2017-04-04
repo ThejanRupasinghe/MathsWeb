@@ -60,7 +60,6 @@ class ResourceController extends Controller
     public function getPDF($type, $name){
         $path='/documents/'.$type.'/'.$name.'.pdf';
         $pdf=Storage::disk('local')->get($path);
-        ob_end_clean();
         return response($pdf,200,['Content-type'=>'application/pdf']);
     }
 
