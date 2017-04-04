@@ -19,9 +19,9 @@ Route::get('/', [
     }
 ]);
 
-Route::get('/gallery', function () {
-    return view('gallery.index');
-});
+//Route::get('/gallery', function () {
+//    return view('gallery.index');
+//});
 
 Route::get('/download', [
    'uses' => 'ResourceController@loginStudent'
@@ -45,9 +45,9 @@ Route::get('/contact-me', function () {
     return view('contact.index');
 });
 
-Route::get('/results', function () {
-    return view('results.index');
-});
+//Route::get('/results', function () {
+//    return view('results.index');
+//});
 
 Route::get('/logout-student', function () {
     Auth::logout();
