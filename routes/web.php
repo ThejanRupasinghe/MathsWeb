@@ -69,6 +69,12 @@ Route::get('/test/download', function () {
     return view('test');
 });
 
+//MALLING
+Route::post('/send-mail',[
+    'uses' => 'MailController@sendMail',
+    'as' =>'sendMail'
+]);
+//MALLING OVER
 
 //LOGIN Routes
 Route::get('/login', [
