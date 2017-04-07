@@ -9,7 +9,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 {{--<h1><a class="navbar-brand" href="/"><span>T</span>eaching</a></h1>--}}
-                <h1><a class="navbar-brand" href="/"><span>තරිඳු පතිරණ</span></a></h1>
+                {{--<h1><a class="navbar-brand" href="/"><span>තරිඳු පතිරණ</span></a></h1>--}}
+                <a class="navbar-brand" href="/"><img src="{{ URL::asset('images/brand.png') }}" alt="First image" style="height: 76px;width: 250px"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
