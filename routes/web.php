@@ -126,5 +126,7 @@ Route::group(['middleware'=> 'admin'], function() {
 
 Route::get('/download/{file}','DownloadController@getDownload');
 
-
+//Route::get('/test',function (){
+//    dd(ini_get("upload_max_filesize"));
+//});
 //Route::get('/downloads','ResourceController@showDownloads');
