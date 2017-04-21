@@ -25,7 +25,7 @@
 						   <a href="{{url('documents/papers/'.$document->name)}}" target="_blank">
 							   <div class="col-md-4 agileinfo_services_grid">
 								   <div class="agileinfo_services_grid1">
-									   <h4>{{$document->name}}</h4>
+									   <h4>{{$document->visible_name}}</h4>
 								   </div>
 							   </div>
 						   </a>
@@ -35,7 +35,7 @@
 						   <a href="{{url('documents/notes/'.$document->name)}}" target="_blank">
 							   <div class="col-md-4 agileinfo_services_grid">
 								   <div class="agileinfo_services_grid1">
-									   <h4>{{$document->name}}</h4>
+									   <h4>{{$document->visible_name}}</h4>
 								   </div>
 							   </div>
 						   </a>

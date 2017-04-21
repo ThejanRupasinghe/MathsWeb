@@ -27,10 +27,17 @@
                 {{method_field('PATCH')}}
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
 
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Enter Document name" value="{{old('relationship')}}" type="text"
+                               name="name" onkeyup="Validate(this)" required/>
+                    </div>
+                </div>
+
                <div class="row">
                        <div class="form-group">
                           <input class="form-control" placeholder="Enter Name to display" value="{{old('relationship')}}" type="text"
-                      name="name" id="phone" onkeyup="Validate(this)" required/>
+                      name="visible_name" id="phone" onkeyup="Validate(this)" required/>
                        </div>
                </div>
 
@@ -45,7 +52,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="file" id="inputimages" name="paper"/>
+                        <input type="file" id="inputimages" name="paper" required/>
                    </div>
                </div>
 

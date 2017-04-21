@@ -64,6 +64,7 @@ class UploadController extends Controller
 
             $paper=new Paper();
             $paper->name=$request->name;
+            $paper->visible_name=$request->visible_name;
             $paper->save();
 
             return redirect()->back();
@@ -89,6 +90,7 @@ class UploadController extends Controller
 
             $note=new Notes();
             $note->name=$request->name;
+            $note->visible_name=$request->visible_name;
             $note->save();
 
             return redirect()->back();
